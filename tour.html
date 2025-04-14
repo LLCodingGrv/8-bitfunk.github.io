@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour - 8-bit Funk</title>
+   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Press Start 2P', cursive;
+            background: linear-gradient(to bottom, #4B0082 40%, #121212 60%);
+            color: #f5f5f5;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #4B0082;
+            padding: 15px;
+            position: relative;
+            z-index: 1;
+        }
+        nav a {
+            color: #D8BFD8;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #BA55D3;
+            text-decoration: underline;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 320px;
+            background-color: transparent;
+            padding-top: 50px;
+        }
+        .logo {
+            max-width: 50%;
+            height: auto;
+        }
+        main {
+            flex: 1;
+        }
+        .tour-container {
+            margin: 50px auto;
+            padding: 20px;
+            max-width: 800px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+            font-family: 'Permanent Marker', cursive;
+        }
+        .tour-container h2 {
+            color: #D8BFD8;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .tour-info {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-family: 'Permanent Marker', cursive !important;
+}
+        .tour-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #D8BFD8;
+            color: #4B0082;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .tour-link:hover {
+            background-color: #BA55D3;
+        }
+        footer {
+            background-color: #4B0082;
+            color: #D8BFD8;
+            text-align: center;
+            padding: 15px;
+            font-weight: bold;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="tour.html">Tour</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <header>
+        <img src="images/8-bit_Funk_Logo.png" alt="8-bit Funk Logo" class="logo">
+    </header>
+
+    <main>
+        <div class="tour-container">
+            <h2>Upcoming Show</h2>
+            <p class="tour-info">
+                📅 Date: Sunday, July 6, 2024 <br>
+                🕑 Time: 2:00 PM <br>
+                📍 Location: Lighthouse Venue, Dún Laoghaire Summerfest
+            </p>
+            <a class="tour-link" href="https://www.eventbrite.ie/e/retro-games-day-featthe-8-bit-funk-band-live-in-concert-tickets-1258950919089?aff=odcleoeventsincollection" target="_blank">Get Tickets</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 8-bit Funk. All rights reserved.</p>
+    </footer>
+</body>
+</html>
