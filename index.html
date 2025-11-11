@@ -1,64 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>8-bit Funk - Home</title>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Permanent+Marker&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
     <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            margin: 0;
-            font-family: 'Press Start 2P', cursive;
-            background: linear-gradient(to bottom, #4B0082 40%, #121212 60%);
-            color: #f5f5f5;
-            text-align: center;
+        body{
+            display:flex;flex-direction:column;min-height:100vh;margin:0;
+            font-family:'Press Start 2P',cursive;
+            background:linear-gradient(to bottom,#4B0082 40%,#121212 60%);
+            color:#f5f5f5;text-align:center
         }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #4B0082;
-            padding: 15px;
-            position: relative;
-            z-index: 1;
-        }
-        nav a {
-            color: #D8BFD8;
-            text-decoration: none;
-            margin: 0 20px;
-            font-size: 20px;
-            font-weight: bold;
-        }
-        nav a:hover {
-            color: #BA55D3;
-            text-decoration: underline;
-        }
-        header {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 320px;
-            background-color: transparent;
-            padding-top: 50px;
-        }
-        .logo {
-            max-width: 50%;
-            height: auto;
-        }
-        main {
-            flex: 1;
-        }
-        footer {
-            background-color: #4B0082;
-            color: #D8BFD8;
-            text-align: center;
-            padding: 15px;
-            font-weight: bold;
-            margin-top: auto;
+        nav{display:flex;justify-content:center;background-color:#4B0082;padding:15px;position:relative;z-index:1}
+        nav a{color:#D8BFD8;text-decoration:none;margin:0 20px;font-size:20px;font-weight:bold}
+        nav a:hover{color:#BA55D3;text-decoration:underline}
+        header{display:flex;flex-direction:column;justify-content:center;align-items:center;height:320px;background:transparent;padding-top:50px}
+        .logo{max-width:50%;height:auto}
+        main{flex:1;display:flex;flex-direction:column;align-items:center;padding:40px 20px;gap:28px}
+        .video-container{width:100%;max-width:800px}
+        .video-container iframe{width:100%;height:450px;border:none;border-radius:10px}
+        footer{background:#4B0082;color:#D8BFD8;text-align:center;padding:15px;font-weight:bold;margin-top:auto}
+        @media (max-width:768px){
+            .logo{max-width:95% !important}
+            .video-container iframe{height:260px}
         }
     </style>
 </head>
@@ -72,21 +38,22 @@
     </nav>
 
     <header>
-        <img src="images/8-bit_Funk_Logo.png" alt="8-bit Funk Logo" class="logo">
+        <img src="images/8-bit_Funk_Logo.png" alt="8-bit Funk Logo" class="logo" />
     </header>
 
     <main>
- <div style="margin: 40px auto; max-width: 800px;">
-        <iframe width="100%" height="450" src="https://www.youtube.com/embed/kHCyqOQloE8" 
-                title="8-bit Funk Video" frameborder="0" allowfullscreen 
-                style="border: 3px solid #D8BFD8; border-radius: 10px;">
-        </iframe>
-    </div>
-</main>
+        <!-- Featured video -->
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/kHCyqOQloE8" title="8-bit Funk - Video 1" allowfullscreen></iframe>
+        </div>
+        <!-- Second video (slightly peeking on smaller screens is handled by spacing) -->
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/AOlqTB4Sdw4" title="8-bit Funk - Video 2" allowfullscreen></iframe>
+        </div>
+    </main>
 
     <footer>
         <p>© 2025 8-bit Funk. All rights reserved.</p>
     </footer>
 </body>
 </html>
-
