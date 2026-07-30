@@ -41,7 +41,31 @@
         <img src="images/8-bit_Funk_Logo.png" alt="8-bit Funk Logo" class="logo" />
     </header>
 
-    <main>
+ <main>
+
+    <div class="album-announcement">
+        <h2>Coming Soon</h2>
+
+        <img src="images/LevelDesignArtwork.png" alt="Level Design Album Artwork">
+
+        <p>
+            Debut album <strong>"Level Design"</strong><br>
+            Releasing this year.<br>
+            Release date to be announced.
+        </p>
+    </div>
+
+    <!-- Featured video -->
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/kHCyqOQloE8" title="8-bit Funk - Video 1" allowfullscreen></iframe>
+    </div>
+
+    <!-- Second video -->
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/AOlqTB4Sdw4" title="8-bit Funk - Video 2" allowfullscreen></iframe>
+    </div>
+
+</main>
         <!-- Featured video -->
         <div class="video-container">
             <iframe src="https://www.youtube.com/embed/kHCyqOQloE8" title="8-bit Funk - Video 1" allowfullscreen></iframe>
@@ -51,6 +75,49 @@
             <iframe src="https://www.youtube.com/embed/AOlqTB4Sdw4" title="8-bit Funk - Video 2" allowfullscreen></iframe>
         </div>
     </main>
+
+    .album-announcement{
+    width:100%;
+    max-width:900px;
+    margin:10px auto 20px auto;
+    text-align:center;
+}
+
+.album-announcement img{
+    width:100%;
+    max-width:500px;
+    border-radius:12px;
+    box-shadow:0 0 20px rgba(216,191,216,0.35);
+}
+
+.album-announcement h2{
+    font-family:'Permanent Marker',cursive;
+    color:#D8BFD8;
+    font-size:2rem;
+    margin:25px 0 15px;
+}
+
+.album-announcement p{
+    font-family:'Permanent Marker',cursive;
+    color:#ffffff;
+    font-size:1.4rem;
+    margin-top:15px;
+    line-height:1.5;
+}
+
+@media (max-width:768px){
+    .album-announcement img{
+        max-width:90%;
+    }
+
+    .album-announcement h2{
+        font-size:1.5rem;
+    }
+
+    .album-announcement p{
+        font-size:1.2rem;
+    }
+}
 
     <footer>
         <p>© 2025 8-bit Funk. All rights reserved.</p>
