@@ -1,148 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tour - 8-bit Funk</title>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Permanent+Marker&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-    <style>
-        body{
-            display:flex;flex-direction:column;min-height:100vh;margin:0;
-            font-family:'Press Start 2P',cursive;
-            background:linear-gradient(to bottom,#4B0082 40%,#121212 60%);
-            color:#f5f5f5;text-align:center
-        }
-        nav{display:flex;justify-content:center;background:#4B0082;padding:15px;position:relative;z-index:1}
-        nav a{color:#D8BFD8;text-decoration:none;margin:0 20px;font-size:20px;font-weight:bold}
-        nav a:hover{color:#BA55D3;text-decoration:underline}
-        header{display:flex;flex-direction:column;justify-content:center;align-items:center;height:320px;background:transparent;padding-top:50px}
-        .logo{max-width:50%;height:auto}
-        main{flex:1;padding:30px 20px}
-        .wrap{max-width:900px;margin:0 auto;display:grid;gap:24px}
-        .card{
-            background:#1e1e1e;border-radius:12px;padding:22px;
-            box-shadow:0 0 10px rgba(255,255,255,.15);text-align:left
-        }
-        .card h3{margin:0 0 10px 0;color:#D8BFD8}
-        .when-where{font-family:'Permanent Marker',cursive;font-size:1.2em;line-height:1.7;margin:0 0 14px 0}
-        .cta{
-            display:inline-block;background:#D8BFD8;color:#4B0082;
-            text-decoration:none;font-weight:bold;border-radius:8px;padding:10px 16px
-        }
-        .cta:hover{background:#BA55D3;color:#121212}
-        .section-title{margin:18px 0 6px 0;font-size:1.1rem;color:#D8BFD8;text-align:left}
-        footer{background:#4B0082;color:#D8BFD8;text-align:center;padding:15px;font-weight:bold;margin-top:auto}
-        @media (max-width:768px){
-            .logo{max-width:95% !important}
-            .when-where{font-size:1.1em}
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tour - 8-bit Funk</title>
+<meta name="description" content="8-bit Funk – Ireland's video game jazz fusion band. Debut album Level Design, out 30 October 2026.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Permanent+Marker&family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.className="js"</script>
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="tour.html">Tour</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<canvas id="fx"></canvas>
+<nav>
+<button class="burger" aria-label="Menu">&#9776;</button>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="music.html">Music</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="tour.html" class="on">Tour</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<header>
+<a href="index.html"><img src="images/8-bit_Funk_Logo.png" alt="8-bit Funk Logo" class="logo"></a>
 
-    <header>
-        <img src="images/8-bit_Funk_Logo.png" alt="8-bit Funk Logo" class="logo" />
-    </header>
-
-    <main>
-        <div class="wrap">
-            <h2 class="section-title">Upcoming Shows</h2>
-
-            <div class="card">
-            <h3>"Level design" Album release party</h3> 
-                 <p class="when-where">
-          30th of October, 8 PM 
-            Doyle's Corner, Dublin, Phibsborough, D07 R26N <br />
-            <a class="cta" href="https://www.tickettailor.com/events/8bitfunk/2373954" target="_blank" rel="noopener">
-    Tickets & Info
-</a>
-    </p>            
-            </div>
-            
-            
-
-            <h2 class="section-title">Past Shows</h2>
-
-<div class="card">
-                <h3>Arthur’s Jazz & Blues Pub — Dublin</h3>
-                <p class="when-where">
-                    SOLD OUT
-                    📅 Saturday, 11 July 2026 — 9PM <br />
-                    📍 Thomas Street, Dublin 8
-                 </p>            
-            </div>
-            
-  <!-- Porterhouse -->
-            <div class="card">
-                <h3>Porterhouse</h3>
-                <p class="when-where">
-                    📅 Thursday, 14 May 2026 — 10:00 PM<br />
-                    📍 Porterhouse, Temple Bar, Dublin
-                </p>
-            </div>
-            
-<!-- O'Regan's -->
-            <div class="card">
-                <h3>O'Regan's downstairs — Dublin</h3>
-                <p class="when-where">
-                    📅 Sunday, 5th of April 2026 — Time 7:30PM<br />
-                    📍 26-27 South Great George's Street, Dublin 2, D02 A395
-                </p>
-            </div>
-            
- <!-- Chillers on the Green -->
-            <div class="card">
-                <h3>Chillers on the Green Dublin</h3>
-                <p class="when-where">
-                    📅 Thursday - March 5th - 7:30PM<br />
-                    📍 B1B St Stephen's Green, Dublin, D02 PC04
-                </p>
-            </div>
-            
-  <!-- Porterhouse -->
-            <div class="card">
-                <h3>Porterhouse</h3>
-                <p class="when-where">
-                    📅 Friday, 16 January 2026 — 09:00 PM<br />
-                    📍 Porterhouse, Temple Bar, Dublin
-                </p>
-            </div>
-            
-            <!-- Portlaoise Jazz Festival -->
-            <div class="card">
-                <h3>Portlaoise Jazz Festival — Sally Garden</h3>
-                <p class="when-where">
-                    📅 Saturday, 31 January 2026 — 10:00 PM<br />
-                    📍 Portlaoise, Co. Laois
-                </p>
-                <a class="cta" href="https://www.portlaoisejazzfest.ie/jazz_trifold_091125.pdf" target="_blank" rel="noopener">Event Info (PDF)</a>
-            </div>
-            
-            <!-- Dún Laoghaire Summerfest (Past, no link) -->
-            <div class="card">
-                <h3>Dún Laoghaire Summerfest — Lighthouse Venue</h3>
-                <p class="when-where">
-                    📅 Sunday, 6 July — 2:00 PM<br />
-                    📍 Dún Laoghaire
-                </p>
-                <span style="font-family:'Permanent Marker',cursive;">Past show</span>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <p>© 2025 8-bit Funk. All rights reserved.</p>
-    </footer>
+</header>
+<main>
+<h2 class="sec rv">Upcoming Shows</h2>
+<div class="card show next rv">
+<div><span class="badge">NEXT UP</span><h3>"Level Design" Album Release Party</h3>
+<p class="mk" style="font-size:1.2rem">📅 30th October 2026 — 8 PM<br>📍 Doyle's Corner, Phibsborough, Dublin, D07 R26N</p></div>
+<a class="btn" href="https://www.tickettailor.com/events/8bitfunk/2373954" target="_blank" rel="noopener">Tickets &amp; Info</a>
+</div>
+<h2 class="sec rv">Past Shows</h2>
+<div class="card past rv"><span class="badge old">SOLD OUT</span><h3>Arthur’s Jazz & Blues Pub</h3><p class="mk" style="font-size:1.15rem">📅 Saturday, 11 July 2026 — 9 PM<br>📍 Thomas Street, Dublin 8</p></div>
+<div class="card past rv"><span class="badge old">PAST</span><h3>Porterhouse</h3><p class="mk" style="font-size:1.15rem">📅 Thursday, 14 May 2026 — 10 PM<br>📍 Temple Bar, Dublin</p></div>
+<div class="card past rv"><span class="badge old">PAST</span><h3>O'Regan's Downstairs</h3><p class="mk" style="font-size:1.15rem">📅 Sunday, 5 April 2026 — 7:30 PM<br>📍 26-27 South Great George's Street, Dublin 2, D02 A395</p></div>
+<div class="card past rv"><span class="badge old">PAST</span><h3>Chillers on the Green</h3><p class="mk" style="font-size:1.15rem">📅 Thursday, 5 March 2026 — 7:30 PM<br>📍 B1B St Stephen's Green, Dublin, D02 PC04</p></div>
+<div class="card past rv"><span class="badge old">PAST</span><h3>Portlaoise Jazz Festival — Sally Garden</h3><p class="mk" style="font-size:1.15rem">📅 Saturday, 31 January 2026 — 10 PM<br>📍 Portlaoise, Co. Laois</p><a class="btn ghost" href="https://www.portlaoisejazzfest.ie/jazz_trifold_091125.pdf" target="_blank" rel="noopener">Event Info (PDF)</a></div>
+<div class="card past rv"><span class="badge old">PAST</span><h3>Porterhouse</h3><p class="mk" style="font-size:1.15rem">📅 Friday, 16 January 2026 — 9 PM<br>📍 Temple Bar, Dublin</p></div>
+<div class="card past rv"><span class="badge old">PAST</span><h3>Dún Laoghaire Summerfest — Lighthouse Venue</h3><p class="mk" style="font-size:1.15rem">📅 Sunday, 6 July 2025 — 2 PM<br>📍 Dún Laoghaire</p></div>
+</main>
+<footer>© 2026 8-bit Funk. All rights reserved.</footer>
+<script src="site.js"></script>
 </body>
 </html>
-
-
-

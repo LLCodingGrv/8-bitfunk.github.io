@@ -1,106 +1,45 @@
-an<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About 8-bit Funk</title>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            margin: 0;
-            font-family: 'Press Start 2P', cursive;
-            background: linear-gradient(to bottom, #4B0082 40%, #121212 60%);
-            color: #f5f5f5;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #4B0082;
-            padding: 15px;
-            position: relative;
-            z-index: 1;
-        }
-        nav a {
-            color: #D8BFD8;
-            text-decoration: none;
-            margin: 0 20px;
-            font-size: 20px;
-            font-weight: bold;
-        }
-        nav a:hover {
-            color: #BA55D3;
-            text-decoration: underline;
-        }
-        header {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 320px;
-            background-color: transparent;
-            padding-top: 50px;
-        }
-        .logo {
-            max-width: 50%;
-            height: auto;
-        }
-        main {
-            flex: 1;
-        }
-        section {
-    padding: 40px;
-    max-width: 800px;
-    margin: 0 auto;
-    font-family: 'Permanent Marker', cursive !important;
-    font-size: 1.3em;
-}
-
-section p {
-    margin-bottom: 20px; /* Adds space between paragraphs */
-}
-        footer {
-            background-color: #4B0082;
-            color: #D8BFD8;
-            text-align: center;
-            padding: 15px;
-            font-weight: bold;
-            margin-top: auto;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About 8-bit Funk</title>
+<meta name="description" content="8-bit Funk – Ireland's video game jazz fusion band. Debut album Level Design, out 30 October 2026.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Permanent+Marker&family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.className="js"</script>
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="tour.html">Tour</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<canvas id="fx"></canvas>
+<nav>
+<button class="burger" aria-label="Menu">&#9776;</button>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html" class="on">About</a></li>
+<li><a href="music.html">Music</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="tour.html">Tour</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<header>
+<a href="index.html"><img src="images/8-bit_Funk_Logo.png" alt="8-bit Funk Logo" class="logo"></a>
 
-    <header>
-        <img src="images/8-bit_Funk_Logo.png" alt="8-bit Funk Logo" class="logo">
-    </header>
-
-    <main>
-        <section>
-            <h2>8-bit Funk – Play, Pause, Groove: Video Game Jazz Reinvented</h2>
-            <p>
-                8-bit Funk is Ireland’s premier video game jazz fusion band, blending the energy of funk, samba, jazz, and beyond with the nostalgic magic of gaming’s greatest soundtracks. From the retro 8-bit era to modern classics, our arrangements bring new life to iconic tunes from Mario, Zelda, Pokémon, and more.
-            </p>
-            <p>
-                Led by prominent musicians from Ireland’s jazz scene, our lineup features Yuzuha O'Halloran (saxophones & flute), Eoghan McCloskey (drums), Luca McCardle (keys), and Leon Laisne (bass). Whether we’re grooving to Bob-omb Battlefield (Mario 64), swinging through Dragon Roost Island (Zelda), or bringing Littleroot Town (Pokémon) to life, we deliver an electrifying mix of nostalgia and musicianship.
-            </p>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2025 8-bit Funk. All rights reserved.</p>
-    </footer>
+</header>
+<main>
+<section class="about rv">
+<h2>Play, Pause, Groove: Video Game Jazz Reinvented</h2>
+<p>8-bit Funk is Ireland’s premier video game jazz fusion band, blending the energy of funk, samba, jazz, and beyond with the nostalgic magic of gaming’s greatest soundtracks. From the retro 8-bit era to modern classics, our arrangements bring new life to iconic tunes from Mario, Zelda, Pokémon, and more.</p>
+<p>Led by prominent musicians from Ireland’s jazz scene, we deliver an electrifying mix of nostalgia and musicianship. Whether we’re grooving to Bob-omb Battlefield (Mario 64), swinging through Dragon Roost Island (Zelda), or bringing Littleroot Town (Pokémon) to life.</p>
+</section>
+<div class="members rv">
+<div class="card"><h3>Yuzuha O'Halloran</h3><p class="mk">Saxophones &amp; Flute</p></div>
+<div class="card"><h3>Eoghan McCloskey</h3><p class="mk">Drums</p></div>
+<div class="card"><h3>Luca McCardle</h3><p class="mk">Keys</p></div>
+<div class="card"><h3>Leon Laisne</h3><p class="mk">Bass</p></div>
+</div>
+</main>
+<footer>© 2026 8-bit Funk. All rights reserved.</footer>
+<script src="site.js"></script>
 </body>
 </html>
-
